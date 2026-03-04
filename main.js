@@ -106,6 +106,14 @@
     document.documentElement.setAttribute('data-theme', storedTheme);
   }
 
+  // Sync OS preference to a class so CSS can use a single selector
+  var prefersLight = window.matchMedia('(prefers-color-scheme: light)');
+  function syncOsTheme(e) {
+    document.documentElement.classList.toggle('prefers-light', e.matches);
+  }
+  syncOsTheme(prefersLight);
+  prefersLight.addEventListener('change', syncOsTheme);
+
   themeToggle.addEventListener('click', function () {
     var current = document.documentElement.getAttribute('data-theme');
     var next;

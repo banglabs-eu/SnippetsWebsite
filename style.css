@@ -23,25 +23,9 @@
   --container: 1120px;
 }
 
-/* === Light Mode === */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
-    --bg-card: #ffffff;
-    --bg-card-hover: #f1f5f9;
-    --text-primary: #1e293b;
-    --text-secondary: #64748b;
-    --accent-light: #4f46e5;
-    --accent-glow: rgba(99, 102, 241, 0.1);
-    --border: #e2e8f0;
-    --nav-scrolled-bg: rgba(248, 250, 252, 0.85);
-    --nav-mobile-bg: rgba(248, 250, 252, 0.97);
-    --shadow-dropdown: rgba(0, 0, 0, 0.1);
-    --btn-secondary-hover-bg: rgba(0, 0, 0, 0.03);
-  }
-}
-[data-theme="light"] {
+/* === Light Mode (manual toggle or OS preference) === */
+[data-theme="light"],
+:root:not([data-theme="dark"]):is(.prefers-light) {
   --bg-primary: #f8fafc;
   --bg-secondary: #f1f5f9;
   --bg-card: #ffffff;
