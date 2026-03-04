@@ -2,12 +2,12 @@ window.i18n = {
 
 /* ===== English ===== */
 en: {
-  "meta.title": "Snippets — Follow the thread. Cite the source. Build something grounded.",
+  "meta.title": "Snippets — Follow the thread. Cite the source. Ground your knowledge.",
   "nav.philosophy": "Philosophy",
   "nav.features": "Features",
   "nav.architecture": "Architecture",
   "nav.community": "Community",
-  "hero.tagline": "Follow the thread. Cite the source. Build something grounded.",
+  "hero.tagline": "Follow the thread. Cite the source. Ground your knowledge.",
   "hero.subtitle": "Note-taking for people who care where their knowledge comes from. Trace ideas back to their origin, find the connections, and build on solid ground.",
   "hero.cta": "Get Started",
   "hero.community": "Join the Community",
@@ -49,7 +49,7 @@ en: {
   "comm.discuss.desc": "Share workflows, ask questions, and help shape the roadmap together.",
   "comm.contrib.title": "Contribute",
   "comm.contrib.desc": "From bug fixes to new features — the project grows with every contribution.",
-  "footer.tagline": "Follow the thread. Cite the source. Build something grounded.",
+  "footer.tagline": "Follow the thread. Cite the source. Ground your knowledge.",
   "footer.github": "GitHub",
   "footer.docs": "Documentation"
 },
