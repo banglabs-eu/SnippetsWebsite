@@ -256,6 +256,17 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-mono);
 }
 .platform-tag svg { color: var(--accent); }
+a.platform-tag { text-decoration: none; transition: border-color 0.2s, background 0.2s; }
+.platform-active { border-color: var(--accent); color: var(--text-primary); }
+a.platform-active:hover { background: var(--accent-glow); }
+.platform-soon { opacity: 0.5; }
+.platform-soon small {
+  font-size: 10px;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
 .hero-ctas {
   display: flex;
   justify-content: center;
@@ -388,7 +399,7 @@ img { max-width: 100%; display: block; }
 /* === Architecture === */
 .arch-flow {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 24px;
 }
@@ -429,10 +440,47 @@ img { max-width: 100%; display: block; }
   color: var(--text-secondary);
   line-height: 1.6;
 }
+.arch-clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  flex: 1;
+  max-width: 300px;
+}
+.arch-client {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.arch-client:hover {
+  border-color: rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+.arch-client-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--accent-glow);
+  border-radius: 8px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.arch-client span {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
 .arch-connector {
   display: flex;
   align-items: center;
-  padding-top: 48px;
   flex-shrink: 0;
 }
 
@@ -486,6 +534,7 @@ img { max-width: 100%; display: block; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .arch-flow { flex-direction: column; align-items: center; }
   .arch-connector { transform: rotate(90deg); padding-top: 0; }
+  .arch-clients { max-width: 400px; width: 100%; }
   .arch-node { max-width: 400px; width: 100%; }
 }
 
