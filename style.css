@@ -256,11 +256,23 @@ img { max-width: 100%; display: block; }
   margin-right: auto;
   line-height: 1.7;
 }
+.hero-get-started {
+  margin-top: 32px;
+  text-align: center;
+}
+.get-started-heading {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
 .hero-platforms {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 28px;
   flex-wrap: wrap;
 }
 .platform-tag {
@@ -286,6 +298,13 @@ a.platform-active:hover { background: var(--accent-glow); }
   text-transform: uppercase;
   letter-spacing: 0.05em;
   opacity: 0.7;
+}
+.platform-clarifier {
+  font-size: 10px;
+  font-family: var(--font-body);
+  color: var(--text-secondary);
+  opacity: 0.7;
+  margin-left: 2px;
 }
 .hero-ctas {
   display: flex;
