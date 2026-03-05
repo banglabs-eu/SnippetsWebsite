@@ -113,6 +113,32 @@ img { max-width: 100%; display: block; }
   font-size: 20px;
   font-weight: 700;
 }
+.nav-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-banglabs {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  background: linear-gradient(135deg, #c7d2fe, #6366f1, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.nav-banglabs:hover {
+  opacity: 0.8;
+}
+.breadcrumb-sep {
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.5;
+  user-select: none;
+}
 .nav-links {
   display: flex;
   gap: 28px;
