@@ -18,7 +18,7 @@ Then open http://localhost:8080. No build, no dependencies, no package manager.
 
 Four files, all in the root:
 
-- **index.html** — Single-page layout with sections: hero (centered, platform tags), philosophy, features, architecture, community, footer. Translatable elements use `data-i18n="key"` attributes.
+- **index.html** — Single-page layout with sections: hero (centered, platform tags), philosophy, features, architecture, community, footer. Translatable elements use `data-i18n="key"` attributes. Loads the GlyphClock widget from bang-labs.eu.
 - **style.css** — Dark theme with CSS custom properties in `:root`. Playfair Display for headings, Inter for body, JetBrains Mono for code. Responsive breakpoints at 1024px, 768px, 480px.
 - **i18n.js** — Translation strings for all 24 EU official languages as `window.i18n` object, keyed by two-letter language code (en, de, fr, es, it, pt, nl, sv, da, fi, pl, cs, sk, hu, ro, bg, hr, sl, el, et, lt, lv, ga, mt).
 - **main.js** — Language switcher (auto-detects browser language, persists to localStorage), scroll-triggered `.reveal` animations via IntersectionObserver, fixed nav with scroll class, mobile hamburger menu.
@@ -34,4 +34,14 @@ Language switcher reads `data-i18n` attributes and replaces `textContent`. The t
 
 ## Design Tokens
 
-All colors and fonts are CSS custom properties in `:root` — change the theme by editing those values. Key ones: `--bg-primary`, `--accent` (amber/gold), `--text-primary`, `--font-heading`, `--font-body`, `--font-mono`.
+All colors and fonts are CSS custom properties in `:root` — change the theme by editing those values. Key ones: `--bg-primary`, `--accent` (indigo #6366f1), `--text-primary`, `--font-heading`, `--font-body`, `--font-mono`.
+
+## Brand Consistency
+
+This site is the source of truth for terminology, feature names, fonts, and design tokens across all Snippets repos (cli.snippets, web.snippets). When writing user-facing copy or docs:
+
+- **Terminology**: note, source, tag, locator, citation, knowledge base, export, session, offline mode — use these exact words, not synonyms.
+- **Feature names**: Inline notes, Source management, Smart tagging, Full-text search, Markdown export, Multi-user, Offline mode.
+- **Fonts**: Playfair Display (headings), Inter (body), JetBrains Mono (code).
+- **Copy voice**: Short declarative sentences. "What it does — how/why." No fluff or superlatives.
+- **Product names**: Snippets (platform), cli.snippets/CLI (Input), web.snippets/Web (Explore), Snippets API (backend), Bang Labs (parent org).
