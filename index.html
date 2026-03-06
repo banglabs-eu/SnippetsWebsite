@@ -4,7 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="meta.title">Snippets — Follow the thread. Cite the source. Ground your knowledge.</title>
-  <meta name="description" content="Note-taking tools for people who care where their knowledge comes from. Trace ideas to their source across CLI, web, and mobile.">
+  <meta name="description" content="Note-taking for people who care where their knowledge comes from. Capture notes with sources, citations, and tags across CLI and web.">
+  <link rel="canonical" href="https://snippets.eu/">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://bang-labs.eu; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:; frame-ancestors 'none';">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://snippets.eu/">
+  <meta property="og:title" content="Snippets — Follow the thread. Cite the source. Ground your knowledge.">
+  <meta property="og:description" content="Note-taking for people who care where their knowledge comes from. Capture notes with sources, citations, and tags across CLI and web.">
+  <meta property="og:site_name" content="Snippets">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Snippets — Follow the thread. Cite the source. Ground your knowledge.">
+  <meta name="twitter:description" content="Note-taking for people who care where their knowledge comes from. Capture notes with sources, citations, and tags across CLI and web.">
+
+  <!-- Additional SEO -->
+  <meta name="keywords" content="note-taking, citations, source management, knowledge base, CLI, research notes, markdown export, open source">
+  <meta name="author" content="Bang Labs">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%236366f1'/><text x='16' y='23' text-anchor='middle' font-family='monospace' font-size='16' font-weight='bold' fill='%23ffffff'>{S}</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,6 +101,8 @@
       </div>
     </div>
   </section>
+
+  <main>
 
   <!-- Philosophy -->
   <section class="section" id="philosophy">
@@ -270,6 +292,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -290,8 +314,39 @@
     </div>
   </footer>
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Bang Labs",
+        "url": "https://bang-labs.eu"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Snippets",
+        "url": "https://snippets.eu/",
+        "description": "Note-taking for people who care where their knowledge comes from. Capture notes with sources, citations, and tags across CLI and web.",
+        "publisher": { "@type": "Organization", "name": "Bang Labs" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Snippets",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Linux, macOS, Web",
+        "url": "https://snippets.eu/",
+        "description": "Note-taking with built-in citations, source management, smart tagging, and full-text search.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "author": { "@type": "Organization", "name": "Bang Labs" }
+      }
+    ]
+  }
+  </script>
+
   <script src="i18n.js?v=6"></script>
   <script src="main.js?v=6"></script>
-  <script src="https://bang-labs.eu/glyphclock-widget.js"></script>
+  <script src="https://bang-labs.eu/glyphclock-widget.js" integrity="sha384-tB6YwAp9emn8hO+s3+Cc0ew0igxVhoOeEI5VdA+BWaw7XKLpqK4XAIV58x1OSbnY" crossorigin="anonymous"></script>
 </body>
 </html>
