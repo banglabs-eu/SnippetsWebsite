@@ -25,22 +25,15 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation (matches the Dashboard header in web.snippets) -->
   <nav class="nav" id="nav">
     <div class="container nav-inner">
-      <div class="nav-breadcrumb">
-        <a href="https://bang-labs.eu" class="nav-banglabs">Bang Labs</a>
-        <span class="breadcrumb-sep">/</span>
-        <a href="#" class="nav-logo">
+      <div class="nav-brand">
+        <a href="https://bang-labs.eu" class="nav-logo" aria-label="Bang Labs">
           <span class="logo-mark">{S}</span>
-          <span class="logo-text">Snippets</span>
         </a>
-      </div>
-      <div class="nav-links" id="nav-links">
-        <a href="#philosophy" data-i18n="nav.philosophy">Philosophy</a>
-        <a href="#features" data-i18n="nav.features">Features</a>
-        <a href="#architecture" data-i18n="nav.architecture">Architecture</a>
-        <a href="#community" data-i18n="nav.community">Community</a>
+        <span class="logo-text">Snippets</span>
+        <button class="help-btn" id="help-btn" aria-label="About Snippets">?</button>
       </div>
       <div class="nav-actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
@@ -55,9 +48,6 @@
           </button>
           <div class="lang-dropdown" id="lang-dropdown"></div>
         </div>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
       </div>
     </div>
   </nav>
@@ -121,197 +111,6 @@
     </div>
   </section>
 
-  <main>
-
-  <!-- Philosophy -->
-  <section class="section" id="philosophy">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="phil.title">Philosophy</h2>
-        <p data-i18n="phil.subtitle">Trust takes rigor. These are the principles behind it.</p>
-      </div>
-      <div class="grid grid-2x2">
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 10 10-12h-9l1-10z"/></svg>
-          </div>
-          <h3 data-i18n="phil.speed.title">Capture first, organize later</h3>
-          <p data-i18n="phil.speed.desc">An idea shouldn't wait for a form. Type it, and it's saved — the structure follows.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          </div>
-          <h3 data-i18n="phil.source.title">Everything has an origin</h3>
-          <p data-i18n="phil.source.desc">Every note carries where it came from. Citations aren't an afterthought — they're built in.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3 data-i18n="phil.community.title">Built in the open</h3>
-          <p data-i18n="phil.community.desc">Open source and shaped by its users. The best tools grow from the people who use them.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-          </div>
-          <h3 data-i18n="phil.export.title">Your data, always</h3>
-          <p data-i18n="phil.export.desc">PostgreSQL storage, clean Markdown export. No proprietary formats, no walls around your work.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section class="section section-alt" id="features">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="feat.title">Features</h2>
-        <p data-i18n="feat.subtitle">Connect and ground what you know</p>
-      </div>
-      <div class="grid grid-3x2">
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-          </div>
-          <h3 data-i18n="feat.notes.title">Inline notes</h3>
-          <p data-i18n="feat.notes.desc">Just type — text becomes a note with automatic page and timestamp detection.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          </div>
-          <h3 data-i18n="feat.sources.title">Source management</h3>
-          <p data-i18n="feat.sources.desc">Books, articles, videos — full metadata with MLA-style citations.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          </div>
-          <h3 data-i18n="feat.tags.title">Smart tagging</h3>
-          <p data-i18n="feat.tags.desc">Organize with tags. Add, remove, and browse with tab completion.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          </div>
-          <h3 data-i18n="feat.search.title">Full-text search</h3>
-          <p data-i18n="feat.search.desc">Find any note instantly across your entire knowledge base.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          </div>
-          <h3 data-i18n="feat.export.title">Markdown export</h3>
-          <p data-i18n="feat.export.desc">Export by source, tag, or author to portable Markdown files.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3 data-i18n="feat.multi.title">Multi-user</h3>
-          <p data-i18n="feat.multi.desc">Authentication with invite codes. Your team, your knowledge base.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Architecture -->
-  <section class="section" id="architecture">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="arch.title">Architecture</h2>
-        <p data-i18n="arch.subtitle">Simple by design. Robust by nature.</p>
-      </div>
-      <div class="arch-diagram reveal">
-        <div class="arch-col arch-col-clients">
-          <div class="arch-client">
-            <div class="arch-client-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-            </div>
-            <span>CLI</span>
-          </div>
-          <div class="arch-client">
-            <div class="arch-client-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            </div>
-            <span>Web</span>
-          </div>
-          <div class="arch-client">
-            <div class="arch-client-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V6a4 4 0 0 1 4-4z"/><path d="M9 8v1a3 3 0 0 0 6 0V8"/><rect x="4" y="14" width="16" height="7" rx="2"/><line x1="9" y1="17.5" x2="15" y2="17.5"/></svg>
-            </div>
-            <span>Agent</span>
-          </div>
-        </div>
-        <div class="arch-col arch-col-arrow">
-          <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12h40" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4 4"/><path d="M32 6l8 6-8 6" fill="none" stroke="var(--accent)" stroke-width="2"/></svg>
-        </div>
-        <div class="arch-col arch-col-center">
-          <div class="arch-node">
-            <div class="arch-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-            </div>
-            <h3>Snippets API</h3>
-            <p data-i18n="arch.api.desc">FastAPI with raw SQL. No ORM — clarity and performance by choice.</p>
-          </div>
-        </div>
-        <div class="arch-col arch-col-arrow-split">
-          <div class="arch-arrow-up">
-            <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12h40" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4 4"/><path d="M32 6l8 6-8 6" fill="none" stroke="var(--accent)" stroke-width="2"/></svg>
-          </div>
-          <div class="arch-arrow-down">
-            <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12h40" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4 4"/><path d="M32 6l8 6-8 6" fill="none" stroke="var(--accent)" stroke-width="2"/></svg>
-          </div>
-        </div>
-        <div class="arch-col arch-col-outputs">
-          <div class="arch-node">
-            <div class="arch-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-            </div>
-            <h3>PostgreSQL</h3>
-            <p data-i18n="arch.db.desc">Battle-tested storage with full-text search and multi-tenant isolation.</p>
-          </div>
-          <div class="arch-node arch-node-export">
-            <div class="arch-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
-            <h3>.md Export</h3>
-            <p data-i18n="arch.export.desc">Clean Markdown files by source, tag, or author.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Community -->
-  <section class="section section-alt" id="community">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="comm.title">Community</h2>
-        <p data-i18n="comm.subtitle">Built in the open, shaped by researchers</p>
-      </div>
-      <div class="grid grid-2">
-        <a href="https://github.com/banglabs-eu/cli.snippets/blob/main/LICENSE" class="card card-link reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </div>
-          <h3 data-i18n="comm.open.title">Open source</h3>
-          <p data-i18n="comm.open.desc">Every component is open. Read the code, file issues, submit pull requests.</p>
-        </a>
-        <a href="https://www.reddit.com/r/Snippets_eu/" class="card card-link reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          </div>
-          <h3 data-i18n="comm.discuss.title">Discussions</h3>
-          <p data-i18n="comm.discuss.desc">Share workflows, ask questions, and help shape the roadmap with other researchers.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  </main>
 
   <!-- Footer -->
   <footer class="footer">
@@ -332,6 +131,96 @@
       </div>
     </div>
   </footer>
+
+  <!-- About overlay (mirrors AboutOverlay.tsx in web.snippets). English-only by design;
+       wire data-i18n keys here later if you want translations across the 24 langs. -->
+  <div id="about-overlay" role="dialog" aria-modal="true" aria-labelledby="about-title" hidden>
+    <div class="about-panel">
+      <button id="about-close" class="about-close" aria-label="Close">×</button>
+      <header class="about-header">
+        <div class="about-brand">
+          <span class="logo-mark">{S}</span>
+          <span class="logo-text">Snippets</span>
+        </div>
+        <h2 id="about-title">A knowledge base built around tags and sources.</h2>
+        <p>Capture notes from anything you read, watch, or attend. Tag them. Cite them. Browse them through whichever lens fits the question.</p>
+      </header>
+
+      <section class="about-section">
+        <span class="about-eyebrow">01 / Concept</span>
+        <h3>Browse your knowledge as a shape</h3>
+        <div class="about-grid about-grid-2">
+          <div class="about-card">
+            <h4>Tag clouds</h4>
+            <p>Click tags to filter. The cloud rebuilds in real time and fades non-matching tags, so co-occurring topics surface as you narrow down.</p>
+          </div>
+          <div class="about-card">
+            <h4>Cross-dimension filters</h4>
+            <p>Switch between tag, source, author, and publisher views. Selections in one dimension carry over to filter what you see in the next.</p>
+          </div>
+          <div class="about-card">
+            <h4>Source-grounded notes</h4>
+            <p>Every note can attach to a source with a locator — page, timestamp, URL fragment. Citations are generated from author and publisher data.</p>
+          </div>
+          <div class="about-card">
+            <h4>Markdown with tags</h4>
+            <p>Notes are Markdown. Tags are per-user and free-form; each note can carry any number, edited inline without leaving the page.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <span class="about-eyebrow">02 / Features</span>
+        <h3>Everything in one place</h3>
+        <div class="about-grid about-grid-3">
+          <div class="about-card">
+            <h4>Tag autocomplete</h4>
+            <p>Type to filter existing tags or create new ones. Enter and Tab add a tag; Backspace removes the last.</p>
+          </div>
+          <div class="about-card">
+            <h4>Typed sources</h4>
+            <p>Books, lectures, videos, articles, podcasts, websites, papers. Each type shows the fields that matter — year and edition for books, date and location for lectures.</p>
+          </div>
+          <div class="about-card">
+            <h4>Ordered authors</h4>
+            <p>Multiple authors per source, in citation order. Search by first or last name. Each author links back to every source they appear on.</p>
+          </div>
+          <div class="about-card">
+            <h4>Inline editing</h4>
+            <p>Click a note's body, tags, or source to edit in place. Sources have an editable detail panel that exposes only the fields relevant to their type.</p>
+          </div>
+          <div class="about-card">
+            <h4>Anki export</h4>
+            <p>Send the currently visible notes to Anki as an .apkg deck. Sources become the card front; note bodies become the back; tags travel with each card.</p>
+          </div>
+          <div class="about-card">
+            <h4>Sanitized Markdown</h4>
+            <p>Bold, italic, lists, links, code blocks — rendered via marked and sanitized through DOMPurify so pasted HTML can't bite.</p>
+          </div>
+          <div class="about-card">
+            <h4>Dark and light themes</h4>
+            <p>Toggle in the header. Persists across sessions; the URL ?theme= override is handy when you want to ignore your stored preference.</p>
+          </div>
+          <div class="about-card">
+            <h4>8 languages in the app</h4>
+            <p>English, German, French, Spanish, Italian, Dutch, Polish, Danish. Auto-detected from your browser; switchable in the header.</p>
+          </div>
+          <div class="about-card">
+            <h4>Magic-link sign-in</h4>
+            <p>No password required. Request a one-time link from your email to sign in. Google OAuth and password sign-in also supported.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="about-footer">
+        <div class="about-footer-links">
+          <a href="https://cli.snippets.eu" target="_blank" rel="noopener noreferrer">cli.snippets</a>
+          <a href="https://web.snippets.eu" target="_blank" rel="noopener noreferrer">web.snippets</a>
+        </div>
+        <span class="about-footer-copy">© 2026 Snippets · Bang Labs</span>
+      </footer>
+    </div>
+  </div>
 
   <script type="application/ld+json">
   {

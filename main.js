@@ -148,22 +148,27 @@
     lastScroll = scrollY;
   }, { passive: true });
 
-  /* --- Mobile menu --- */
-  var hamburger = document.getElementById('hamburger');
-  var navLinks = document.getElementById('nav-links');
+  /* --- About overlay (replaces the long-form marketing sections) --- */
+  var aboutOverlay = document.getElementById('about-overlay');
+  var helpBtn = document.getElementById('help-btn');
+  var aboutClose = document.getElementById('about-close');
 
-  hamburger.addEventListener('click', function () {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('open');
-    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  function openAbout() {
+    aboutOverlay.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeAbout() {
+    aboutOverlay.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  helpBtn.addEventListener('click', openAbout);
+  aboutClose.addEventListener('click', closeAbout);
+  aboutOverlay.addEventListener('click', function (e) {
+    if (e.target === aboutOverlay) closeAbout();
   });
-
-  navLinks.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      hamburger.classList.remove('active');
-      navLinks.classList.remove('open');
-      document.body.style.overflow = '';
-    });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !aboutOverlay.hidden) closeAbout();
   });
 
   /* --- Scroll reveal --- */
